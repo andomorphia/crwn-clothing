@@ -2,7 +2,7 @@ import reducer from '../user.reducer'
 import * as actions from '../user.actions'
 import { INITIAL_STATE } from '../user.reducer'
 
-describe('todos reducer', () => {
+describe('user reducer', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual({ currentUser: null })
   })
