@@ -9,7 +9,10 @@ import App from './App'
 
 const middlewares = [logger]
 const mockStore = configureMockStore(middlewares)
-const store = mockStore({ user: { currentUser: null } })
+const store = mockStore({
+  user: { currentUser: null },
+  cart: { hidden: true },
+})
 
 it('should render without crashing', () => {
   const div = document.createElement('div')
